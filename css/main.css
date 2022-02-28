@@ -35,8 +35,8 @@ span.label {
   font-family: serif;
   font-weight: normal;
 }
-span.icon {
-  background: url('https://cdn-icons-png.flaticon.com/512/2991/2991148.png') transparent 5px 50% no-repeat;
+img.icon {
+  background: transparent 5px 50% no-repeat;
   display: inline-block;
   vertical-align: middle;
   width: 42px;
