@@ -5,7 +5,8 @@
 .loginContainer{
   position: absolute;
   margin-left: 32.5%;
-  margin-top: 32.5%;
+  margin-top: 14%;
+  justify-content: center;
 }
 .loginBox{
   background: #F0F0F0;
@@ -15,42 +16,49 @@
   width: 100%;
   height: 30px;
   margin-bottom: 7%;
+  font-family: 'IBM Plex Sans Condensed';
+  font-size: 18px;
+}
+
+.loginButton{
+  font-size: 30px;
+  font-weight: bold;
+  height: 45px;
+  width: 101%;
+  background: #EEA10C;
+
 }
 
 /* Google Button */
 #customBtn {
   display: inline-block;
-  background: white;
-  color: #444;
-  width: 190px;
+  background: #F0F0F0;
+  width: 100%;
+  height: 30px;
   border-radius: 5px;
-  border: thin solid #888;
-  box-shadow: 1px 1px 1px grey;
-  white-space: nowrap;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 2px;
+  margin-bottom: 7%;
 }
 #customBtn:hover {
   cursor: pointer;
-}
-span.label {
-  font-family: serif;
-  font-weight: normal;
 }
 img.icon {
   background: transparent 5px 50% no-repeat;
   display: inline-block;
   vertical-align: middle;
-  width: 42px;
-  height: 42px;
+  width: 30px;
+  height: 30px;
 }
 span.buttonText {
-  display: inline-block;
+  display: inline;
   vertical-align: middle;
-  padding-left: 42px;
-  padding-right: 42px;
-  font-size: 14px;
+  position: center;
+  font-size: 18px;
   font-weight: bold;
-  /* Use the Roboto font that is loaded in the <head> */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans Condensed';
 }
 
 
