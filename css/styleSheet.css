@@ -1,4 +1,3 @@
-/*----------------------------------------------------HEADER----------------------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +5,7 @@
     text-decoration: none;
 }
 
+/*----------------------------------------------------HEADER----------------------------------------------------------*/
 
 header {
     width: 100vw;
@@ -119,7 +119,77 @@ header nav .signUpButton:hover{
 }
 
 
-/*----------------------------------------------------HEADER----------------------------------------------------------*/
+/*----------------------------------------------Fin del HEADER--------------------------------------------------------*/
+
+/*----------------------------------------------------FOOTER----------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 200px;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #191919;
+}
+
+
+footer .footerContainer{
+    width: 67.1%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer .footerContainer .row {
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: auto;
+    flex-wrap: wrap;
+    opacity: 95%;
+}
+
+
+footer .footerContainer .row .footerLinkList{
+    display: inline-grid;
+    width: 33%;
+}
+
+footer .footerContainer .row .footerLinkList span{
+    padding-top: 1em;
+    padding-left: 25px;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #EEA10C;
+}
+
+footer .footerContainer .row .footerLinkList ul{
+    padding-top: 0.5em;
+    list-style: none;
+    margin: 0;
+}
+
+footer .footerContainer .row .footerLinkList ul li{
+    padding: 10px;
+}
+
+footer .footerContainer .row .footerLinkList ul li a{
+    padding: 10px 15px ;
+    vertical-align: middle;
+    color: #EEA10C;
+}
+
+footer .footerContainer .row .footerLinkList ul li a img{
+    vertical-align: middle;
+    width: 1.2em;
+}
+
+footer .footerContainer .row .footerLinkList ul li a:hover{
+    filter: brightness(1.05);
+    background-color: #FFFFFF;
+    opacity: 75%;
+}
+
+
+/*----------------------------------------------Fin del FOOTER--------------------------------------------------------*/
 
 
 .loginTheme{
@@ -250,4 +320,142 @@ span.buttonText {
 .TicketPicture{
     margin-left: 40%;
 }
+
+.ticketButton{
+    background: #EEA10C;
+    margin-left: 42%;
+    height: 75px;
+    width: 125px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+/*----------------------------------------------------WISHLIST----------------------------------------------------------*/
+.wishlistBody{
+    font-family: 'IBM Plex Sans Condensed';
+    background-color: #464646;
+}
+.wishlistContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.wishlistObject{
+
+    background-color:#c4c4c4;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 10px;
+    shape-margin: 10px;
+    border-radius: 20px;
+    padding: 5%;
+
+
+}
+.wishlistGrid{
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5em;
+    grid-auto-rows: auto auto auto;
+}
+
+.wishlistTitle{
+    color: #F0F0F0;
+    text-align: center;
+    font-size: 3.5vmax;
+}
+.wishlistCounter{
+    color: #F0F0F0;
+    text-align: center;
+    font-size: 1.5vmax;
+}
+.wishlistBin{
+    height: 75px;
+    width: 75px;
+    object-position: right;
+}
+.wishlistProductPicture{
+    height: 350px;
+    width: 350px;
+}
+.wishlistProduct{
+    text-align: center;
+    font-size: 2vmax;
+}
+.descriptionText{
+    font-size: 1.5vmax;
+}
+/*----------------------------------------------------WISHLIST----------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------SHOPPING CART----------------------------------------------------------
+
+----------------------------------------------------SHOPPING CART----------------------------------------------------------*/
+.cartBody{
+
+    background-color: #464646;
+}
+
+.cartTitle{
+    color: #F0F0F0;
+    text-align: center;
+    font-size: 3.5vmax;
+}
+.cartCounter{
+    color: #F0F0F0;
+    text-align: center;
+    font-size: 1.5vmax;
+}
+
+.cartGrid{
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+}
+.cartProductGrid{
+
+    background-color: #F0F0F0;
+    grid-template-columns: auto;
+    grid-template-row: auto auto auto;
+}
+
+.cartProductGridA{
+    background-color:#a4a4a4;
+    padding: 40px;
+    font-size: 30px;
+    margin-left: 5%;
+    margin-right: 40%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    shape-margin: 10px;
+    border-radius: 10px;
+}
+
+
+.cartProduct{
+    text-align: center;
+    font-size: 2vmax;
+}
+
+.cartProductPicture{
+    height: 150px;
+    width: 150px;
+}
+
+.cartBin{
+    margin-bottom: 5%;
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+
+
+
 
