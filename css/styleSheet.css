@@ -5,6 +5,88 @@
     text-decoration: none;
 }
 
+/*------------------------------------------------- HOME PAGE --------------------------------------------------------*/
+
+.homePage{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background-color: darkkhaki;
+}
+
+.homePage .welcomingButtons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: aqua;
+    justify-content: space-between;
+}
+
+.homePage .welcomingButtons .welcomingButton{
+    display: inline-grid;
+}
+
+.homePage .welcomingButtons .welcomingButton:hover{
+    filter: brightness(1.05);
+}
+
+.homePage .trendingCategories{
+    display: inline-grid;
+    background-color: green;
+}
+
+.homePage  .popularProducts{
+    background-color: blue;
+    display: inline-grid;
+}
+
+.homePage  .popularProducts h1{
+    color: #EEA10C;
+}
+
+.homePage .popularProducts a {
+    background-color: #C4C4C4CC;
+}
+
+.homePage .popularProducts a .product{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 55% auto;
+    border-radius: 50px;
+}
+
+.homePage .popularProducts img{
+    width: 70%;
+    margin-left: 3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 50px;
+}
+
+.homePage .popularProducts .info{
+    margin-top: 3em;
+    margin-right: 1em;
+    font-size: 1.3em;
+    color: black;
+}
+
+.homePage .popularProducts .name{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.7em;
+    grid-column: 1/3;
+    color: #FFFFFF;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/*------------------------------------------------ !HOME PAGE --------------------------------------------------------*/
+
+
 /*----------------------------------------------------HEADER----------------------------------------------------------*/
 
 header {
@@ -727,7 +809,6 @@ span.buttonText {
 }
 
 .productGridContainer .additionalOptions .opinions .concreteOpinion .score{
-    vertical-align: center;
     font-weight: bolder;
 }
 
@@ -749,7 +830,37 @@ span.buttonText {
 
 /*--- FAQ section ---*/
 
+.productGridContainer .additionalOptions .faqGrid{
+    display: grid;
+    grid-template-columns: auto;
+}
 
+.productGridContainer .additionalOptions .questionGrid{
+    display: grid;
+    background-color: #C4C4C4;
+    grid-template-columns: auto auto;
+    vertical-align: center;
+    text-align: justify;
+    margin: 2em 2em 1em 2em;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.productGridContainer .additionalOptions .questionGrid .question{
+    font-weight: bold;
+    font-size: 1.5em;
+    height: 1.5em;
+}
+
+.productGridContainer .additionalOptions .questionGrid .numberOfReplies{
+    font-weight: bolder;
+}
+
+.productGridContainer .additionalOptions .questionGrid .reply{
+    grid-column: 1/3;
+    padding-top: 0.5em;
+    padding-bottom: 1.3em;
+}
 /*--- !FAQ section ---*/
 /*--- !Page options --*/
 /*----------------------------------------------- Concrete Product ---------------------------------------------------*/
