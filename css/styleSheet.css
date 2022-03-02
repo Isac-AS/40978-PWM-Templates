@@ -261,11 +261,12 @@ span.buttonText {
 }
 
 .contactGrid{
-
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 5em;
-    grid-auto-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    grid-auto-rows: 50% 50%;
+    margin-bottom: 2em;
+    margin-right: 2em;
 }
 
 .contactObject{
@@ -277,6 +278,7 @@ span.buttonText {
     box-shadow: 5px 5px 10px;
     shape-margin: 10px;
     border-radius: 20px;
+
 }
 .contactPicture{
     position: center;
@@ -307,9 +309,11 @@ span.buttonText {
 .TicketContainer{
     background-color:#c4c4c4;
     padding: 30px;
-    position: absolute;
-    margin-left: 25%;
+    position: relative;
+    margin-left: 20em;
+    margin-right: 25em;
     margin-top: 8%;
+    margin-bottom: 8%;
     border-radius: 10px;
 }
 
@@ -318,12 +322,12 @@ span.buttonText {
 }
 
 .TicketPicture{
-    margin-left: 40%;
+    margin-left: 45%;
 }
 
 .ticketButton{
     background: #EEA10C;
-    margin-left: 42%;
+    margin-left: 47%;
     height: 75px;
     width: 125px;
     border-radius: 10px;
@@ -338,9 +342,11 @@ span.buttonText {
     /*background-color:#c4c4c4;*/
 
 
-    position: absolute;
-    margin-left: 10%;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 2%;
+    margin-bottom: 2%;
     border-radius: 10px;
 }
 
@@ -353,12 +359,10 @@ span.buttonText {
     box-shadow: 5px 5px 10px;
     shape-margin: 10px;
     border-radius: 20px;
-    padding: 5%;
 
 
 }
 .wishlistGrid{
-
     display: grid;
     grid-template-columns: auto;
     grid-gap: 5em;
