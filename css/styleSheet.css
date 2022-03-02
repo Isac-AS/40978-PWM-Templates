@@ -11,43 +11,99 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
-    background-color: darkkhaki;
 }
 
+.homePage  h1{
+    color: #EEA10C;
+    margin-left: 3em;
+    margin-top: 3em;
+}
+
+/*--- Welcoming buttons --*/
 .homePage .welcomingButtons{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: aqua;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 3em;
+    margin-top: 1em;
 }
 
 .homePage .welcomingButtons .welcomingButton{
     display: inline-grid;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 2em;
+    padding: 1vw;
+    background-color: #C4C4C4;
+}
+
+.homePage .welcomingButtons .welcomingButton img{
+    width: 1em;
+    vertical-align: center;
+}
+
+.homePage .welcomingButtons .welcomingButton u{
+    font-weight: bold;
+    color: black;
 }
 
 .homePage .welcomingButtons .welcomingButton:hover{
-    filter: brightness(1.05);
+    filter: brightness(1.15);
 }
+/*--- Welcoming buttons --*/
 
+
+/*--- Trending categories --*/
 .homePage .trendingCategories{
-    display: inline-grid;
-    background-color: green;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    column-gap: 5vw;
+    margin: 4em 4em;
+    justify-content: center;
 }
 
+.homePage .trendingCategories .category{
+    display: grid;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+    font-size: 1.3em;
+}
+
+.homePage .trendingCategories .category img{
+    width: 5em;
+    padding: 0.5em 1em;
+    align-content: center;
+}
+
+.homePage .trendingCategories .category u{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: black;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.homePage .trendingCategories .category:hover{
+    filter: brightness(1.15);
+}
+
+/*--- Trending categories --*/
+
+
+/*--- Popular products --*/
 .homePage  .popularProducts{
-    background-color: blue;
-    display: inline-grid;
-}
-
-.homePage  .popularProducts h1{
-    color: #EEA10C;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 4em 4em;
 }
 
 .homePage .popularProducts a {
-    background-color: #C4C4C4CC;
+    background-color: #C4C4C4;
 }
 
-.homePage .popularProducts a .product{
+.homePage .popularProducts .product{
     width: 90%;
     margin-left: 5%;
     margin-top: 3%;
@@ -57,7 +113,7 @@
     border-radius: 50px;
 }
 
-.homePage .popularProducts img{
+.homePage .popularProducts .product img{
     width: 70%;
     margin-left: 3em;
     margin-top: 2em;
@@ -65,14 +121,14 @@
     border-radius: 50px;
 }
 
-.homePage .popularProducts .info{
+.homePage .popularProducts .product .info{
     margin-top: 3em;
     margin-right: 1em;
     font-size: 1.3em;
     color: black;
 }
 
-.homePage .popularProducts .name{
+.homePage .popularProducts .product .name{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 1.7em;
@@ -82,8 +138,7 @@
     border-radius: 5px;
     text-align: center;
 }
-
-
+/*--- Popular products --*/
 /*------------------------------------------------ !HOME PAGE --------------------------------------------------------*/
 
 
@@ -108,12 +163,6 @@ header .inner{
     height: 100%;
     display: block;
     margin: 0 auto;
-}
-
-header .logo{
-    display: table;
-    height: 100%;
-    float: left;
 }
 
 header .logo div{
@@ -720,8 +769,15 @@ span.buttonText {
     font-size: 1em;
     font-weight: bold;
     width: 10em;
+    height: 100%;
     background-color: #EEA10C;
     border-radius: 15px;
+    color: black;
+}
+
+.productGridContainer .operationsGrid .addToCartButton h3{
+    margin-top: 1em;
+    text-align: center;
 }
 
 .productGridContainer .operationsGrid .buyNowButton{
@@ -752,10 +808,15 @@ span.buttonText {
 
 .productGridContainer .additionalOptions .selectionButtons .concreteSelectionButton{
     background-color: #EEA10C;
+    color: black;
     font-weight: bold;
     font-size: 1em;
     height: 2.5em;
     border-radius: 15px;
+}
+
+.productGridContainer .additionalOptions .selectionButtons .concreteSelectionButton h3{
+    margin-top: 0.5em;
 }
 /*-- !Buttons --*/
 
