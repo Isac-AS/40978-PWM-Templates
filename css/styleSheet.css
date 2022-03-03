@@ -1026,7 +1026,9 @@ span.buttonText {
 
 
 /*---------------------------------------------ABOUT US---------------------------------------------------------------*/
-
+.aboutUsBody{
+    background-color: #464646;
+}
 .aboutUs .intro{
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
     url(https://blog.pdainternational.net/wp-content/uploads/2018/08/rawpixel-653764-unsplash.jpg);
@@ -1034,7 +1036,6 @@ span.buttonText {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .aboutUs .intro .introText{
@@ -1048,14 +1049,14 @@ span.buttonText {
 
 .aboutUs .intro .explainBox{
     width: 50%;
-    position: absolute;
     margin-left: 25%;
+    margin-top: 3%;
 }
 
 .aboutUs .intro .introExplain{
     color: white;
     font-style: normal;
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
 }
 
