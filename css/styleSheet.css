@@ -1028,7 +1028,6 @@ span.buttonText {
 /*---------------------------------------------ABOUT US---------------------------------------------------------------*/
 .aboutUsBody{
     background-color: #464646;
-
 }
 
 .aboutUs {
@@ -1068,7 +1067,7 @@ span.buttonText {
 }
 
 .aboutUs .expect{
-    margin-top: 1%;
+    margin-top: 2%;
     background-color: #A4A4A4;
     display: grid;
     grid-template-columns: 40% auto;
@@ -1105,5 +1104,6 @@ span.buttonText {
     font-size: 30px;
     width: 65%;
     margin-left: 17%;
+    margin-bottom: 1%;
 }
 
