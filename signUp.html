@@ -2,16 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
     <link rel="stylesheet" href="css/styleSheet.css">
-    <title>Register</title>
+    <title>Sign Up</title>
 </head>
 <body class="loginTheme">
-  <div class="loginContainer">
-    <input class="loginBox" type="firstName" placeholder="First Name">
-    <input class="loginBox" type="lastName" placeholder="Last Name">
-    <input class="loginBox" type="email" placeholder="Email">
-    <input class="loginBox" type="password" placeholder="Password">
-
-  </div>
+    <iframe src="header_ext.html" style="border: none; width: 100%"></iframe>
+    <div class="signupContainer">
+        <div id="customBtn">
+            <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="icon">
+            <span class="buttonText">Continuar con Google</span>
+        </div>
+        <p>OR</p>
+        <input class="loginBox" type="text" placeholder="First Name">
+        <input class="loginBox" type="text" placeholder="Last Name">
+        <input class="loginBox" type="email" placeholder="Email">
+        <input class="loginBox" type="password" placeholder="Password">
+        <button type="button" class="loginButton loginBox">Sign Up</button>
+        <p class="passwordForgotten">Forgot password?</p>
+    </div>
 </body>
 </html>
