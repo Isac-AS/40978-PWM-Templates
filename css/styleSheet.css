@@ -961,88 +961,6 @@ span.buttonText {
 /*--- !Page options --*/
 /*----------------------------------------------- Concrete Product ---------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------------------------------------------------SHOPPING CART----------------------------------------------------------
 
 ----------------------------------------------------SHOPPING CART----------------------------------------------------------*/
@@ -1106,6 +1024,40 @@ span.buttonText {
     width: 40px;
 }
 
+
+/*---------------------------------------------ABOUT US---------------------------------------------------------------*/
+
+.aboutUs .intro{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+    url(https://blog.pdainternational.net/wp-content/uploads/2018/08/rawpixel-653764-unsplash.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.aboutUs .intro .introText{
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 125px;
+    text-align: center;
+}
+
+.aboutUs .intro .explainBox{
+    width: 50%;
+    position: absolute;
+    margin-left: 25%;
+}
+
+.aboutUs .intro .introExplain{
+    color: white;
+    font-style: normal;
+    font-size: 26px;
+    text-align: center;
+}
 
 
 
