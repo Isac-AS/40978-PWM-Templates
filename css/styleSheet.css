@@ -1052,8 +1052,9 @@ span.buttonText {
     font-size: 75px;
     line-height: 125px;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 4%;
     margin-bottom: 3%;
+    width: 100%;
 }
 
 .aboutUs .intro h2{
@@ -1092,15 +1093,16 @@ span.buttonText {
     color: white;
     font-style: normal;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 60px;
     line-height: 125px;
+    margin-top: 3%;
 }
 
 .aboutUs .expect .expectText h2{
     text-align: center;
     color: white;
     font-style: normal;
-    font-size: 24px;
+    font-size: 30px;
     width: 65%;
     margin-left: 17%;
 }
