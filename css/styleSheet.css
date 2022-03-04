@@ -12,43 +12,99 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
-    background-color: darkkhaki;
 }
 
+.homePage  h1{
+    color: #EEA10C;
+    margin-left: 3em;
+    margin-top: 3em;
+}
+
+/*--- Welcoming buttons --*/
 .homePage .welcomingButtons{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: aqua;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 3em;
+    margin-top: 1em;
 }
 
 .homePage .welcomingButtons .welcomingButton{
     display: inline-grid;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 2em;
+    padding: 1vw;
+    background-color: #C4C4C4;
+}
+
+.homePage .welcomingButtons .welcomingButton img{
+    width: 1em;
+    vertical-align: center;
+}
+
+.homePage .welcomingButtons .welcomingButton u{
+    font-weight: bold;
+    color: black;
 }
 
 .homePage .welcomingButtons .welcomingButton:hover{
-    filter: brightness(1.05);
+    filter: brightness(1.15);
 }
+/*--- Welcoming buttons --*/
 
+
+/*--- Trending categories --*/
 .homePage .trendingCategories{
-    display: inline-grid;
-    background-color: green;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    column-gap: 5vw;
+    margin: 4em 4em;
+    justify-content: center;
 }
 
+.homePage .trendingCategories .category{
+    display: grid;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+    font-size: 1.3em;
+}
+
+.homePage .trendingCategories .category img{
+    width: 5em;
+    padding: 0.5em 1em;
+    align-content: center;
+}
+
+.homePage .trendingCategories .category u{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: black;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.homePage .trendingCategories .category:hover{
+    filter: brightness(1.15);
+}
+
+/*--- Trending categories --*/
+
+
+/*--- Popular products --*/
 .homePage  .popularProducts{
-    background-color: blue;
-    display: inline-grid;
-}
-
-.homePage  .popularProducts h1{
-    color: #EEA10C;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 4em 4em;
 }
 
 .homePage .popularProducts a {
-    background-color: #C4C4C4CC;
+    background-color: #C4C4C4;
 }
 
-.homePage .popularProducts a .product{
+.homePage .popularProducts .product{
     width: 90%;
     margin-left: 5%;
     margin-top: 3%;
@@ -58,7 +114,7 @@
     border-radius: 50px;
 }
 
-.homePage .popularProducts img{
+.homePage .popularProducts .product img{
     width: 70%;
     margin-left: 3em;
     margin-top: 2em;
@@ -66,14 +122,14 @@
     border-radius: 50px;
 }
 
-.homePage .popularProducts .info{
+.homePage .popularProducts .product .info{
     margin-top: 3em;
     margin-right: 1em;
     font-size: 1.3em;
     color: black;
 }
 
-.homePage .popularProducts .name{
+.homePage .popularProducts .product .name{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 1.7em;
@@ -83,15 +139,14 @@
     border-radius: 5px;
     text-align: center;
 }
-
-
+/*--- Popular products --*/
 /*------------------------------------------------ !HOME PAGE --------------------------------------------------------*/
 
 
 /*----------------------------------------------------HEADER----------------------------------------------------------*/
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 125px;
     font-size: large;
     font-weight: bolder;
@@ -109,12 +164,6 @@ header .inner{
     height: 100%;
     display: block;
     margin: 0 auto;
-}
-
-header .logo{
-    display: table;
-    height: 100%;
-    float: left;
 }
 
 header .logo div{
@@ -207,7 +256,7 @@ header nav .signUpButton:hover{
 /*----------------------------------------------------FOOTER----------------------------------------------------------*/
 
 footer {
-    width: 100vw;
+    width: 100%;
     height: 200px;
     font-size: large;
     font-weight: bolder;
@@ -262,6 +311,8 @@ footer .footerContainer .row .footerLinkList ul li a{
 
 footer .footerContainer .row .footerLinkList ul li a img{
     vertical-align: middle;
+    padding-bottom: 0.25em;
+    padding-right: 0.4em;
     width: 1.2em;
 }
 
@@ -273,7 +324,7 @@ footer .footerContainer .row .footerLinkList ul li a:hover{
 
 
 /*----------------------------------------------Fin del FOOTER--------------------------------------------------------*/
-/*--------------------------------------------------LOGIN-------------------------------------------------------------*/
+
 
 .loginTheme{
     background-color: #464646;
@@ -281,150 +332,55 @@ footer .footerContainer .row .footerLinkList ul li a:hover{
 
 .loginContainer{
     position: absolute;
-    margin-left: 36%;
-    margin-top: 5%;
-    width: 30%;
+    margin-left: 32.5%;
+    margin-top: 16%;
 }
-
-.loginContainer p{
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-.loginContainer p.passwordForgotten{
-    color: #FFBB56;
-}
-
-.loginContainer .loginBox{
+.loginBox{
     background: #F0F0F0;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     width: 100%;
     height: 30px;
-    margin-bottom: 5%;
-    font-size: 18px;
-}
-
-.loginContainer .loginButton{
-    font-size: 30px;
-    font-weight: bold;
-    height: 45px;
-    width: 101%;
-    background: #EEA10C;
-
-}
-
-.loginButton:hover{
-    cursor: pointer;
+    margin-bottom: 7%;
 }
 
 /* Google Button */
 #customBtn {
     display: inline-block;
-    background: #F0F0F0;
-    width: 100%;
-    height: 30px;
+    background: white;
+    color: #444;
+    width: 190px;
     border-radius: 5px;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    padding: 2px;
-    margin-bottom: 5%;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
 }
 #customBtn:hover {
     cursor: pointer;
 }
-img.icon {
-    background: transparent 5px 50% no-repeat;
+span.label {
+    font-family: serif;
+    font-weight: normal;
+}
+span.icon {
+    background: url('https://cdn-icons-png.flaticon.com/512/2991/2991148.png') transparent 5px 50% no-repeat;
     display: inline-block;
     vertical-align: middle;
-    width: 30px;
-    height: 30px;
+    width: 42px;
+    height: 42px;
 }
 span.buttonText {
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
-    position: center;
-    font-size: 18px;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-size: 14px;
     font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto', sans-serif;
 }
 
-/*--------------------------------------------------SIGN UP-----------------------------------------------------------*/
-
-.signupContainer{
-    position: absolute;
-    margin-left: 36%;
-    margin-top: 5%;
-    width: 30%;
-}
-
-.signupContainer p{
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 5%;
-    text-align: center;
-}
-
-.signupContainer p.passwordForgotten{
-    color: #FFBB56;
-}
-
-.signupContainer .loginBox{
-    background: #F0F0F0;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    width: 100%;
-    height: 30px;
-    margin-bottom: 5%;
-    font-size: 18px;
-}
-
-.signupContainer .loginButton{
-    font-size: 30px;
-    font-weight: bold;
-    height: 45px;
-    width: 101%;
-    background: #EEA10C;
-
-}
-
-/*----------------------------------------------------HEADER_EXT------------------------------------------------------*/
-
-.headerextContainer{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 75% 1fr;
-}
-
-.headerextContainer .logo{
-    height: 100%;
-}
-
-.headerextContainer .logo img{
-    float: right;
-    margin-right: 26.5%;
-}
-
-.headerextContainer .close{
-    height: 100%;
-}
-
-.headerextContainer .close img{
-    width: 75px;
-    height: 75px;
-    float: right;
-    padding: 5%;
-
-}
-
-/*----------------------------------------------Fin del FOOTER_EXT----------------------------------------------------*/
 .contactContainer{
     background-color:#c4c4c4;
     padding: 30px;
@@ -439,12 +395,11 @@ span.buttonText {
 }
 
 .contactGrid{
+
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 1em;
-    grid-auto-rows: 50% 50%;
-    margin-bottom: 2em;
-    margin-right: 2em;
+    grid-template-columns: auto auto;
+    grid-gap: 5em;
+    grid-auto-rows: auto auto;
 }
 
 .contactObject{
@@ -456,7 +411,6 @@ span.buttonText {
     box-shadow: 5px 5px 10px;
     shape-margin: 10px;
     border-radius: 20px;
-
 }
 .contactPicture{
     position: center;
@@ -487,11 +441,9 @@ span.buttonText {
 .TicketContainer{
     background-color:#c4c4c4;
     padding: 30px;
-    position: relative;
-    margin-left: 20em;
-    margin-right: 25em;
+    position: absolute;
+    margin-left: 25%;
     margin-top: 8%;
-    margin-bottom: 8%;
     border-radius: 10px;
 }
 
@@ -500,12 +452,12 @@ span.buttonText {
 }
 
 .TicketPicture{
-    margin-left: 45%;
+    margin-left: 40%;
 }
 
 .ticketButton{
     background: #EEA10C;
-    margin-left: 47%;
+    margin-left: 42%;
     height: 75px;
     width: 125px;
     border-radius: 10px;
@@ -520,6 +472,9 @@ span.buttonText {
     /*background-color:#c4c4c4;*/
 
 
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 2%;
     position: absolute;
     margin-left: 10%;
     /*background-color:#c4c4c4;*/
@@ -542,10 +497,12 @@ span.buttonText {
     box-shadow: 5px 5px 10px;
     shape-margin: 10px;
     border-radius: 20px;
+    padding: 5%;
 
 
 }
 .wishlistGrid{
+
     display: grid;
     grid-template-columns: auto;
     grid-gap: 5em;
@@ -823,8 +780,15 @@ span.buttonText {
     font-size: 1em;
     font-weight: bold;
     width: 10em;
+    height: 100%;
     background-color: #EEA10C;
     border-radius: 15px;
+    color: black;
+}
+
+.productGridContainer .operationsGrid .addToCartButton h3{
+    margin-top: 1em;
+    text-align: center;
 }
 
 .productGridContainer .operationsGrid .buyNowButton{
@@ -855,10 +819,15 @@ span.buttonText {
 
 .productGridContainer .additionalOptions .selectionButtons .concreteSelectionButton{
     background-color: #EEA10C;
+    color: black;
     font-weight: bold;
     font-size: 1em;
     height: 2.5em;
     border-radius: 15px;
+}
+
+.productGridContainer .additionalOptions .selectionButtons .concreteSelectionButton h3{
+    margin-top: 0.5em;
 }
 /*-- !Buttons --*/
 
@@ -967,6 +936,13 @@ span.buttonText {
 /*--- !FAQ section ---*/
 /*--- !Page options --*/
 /*----------------------------------------------- Concrete Product ---------------------------------------------------*/
+
+
+
+
+
+
+
 
 
 /*----------------------------------------------------SHOPPING CART----------------------------------------------------------
