@@ -726,10 +726,12 @@ footer .footerContainer .row .footerLinkList ul li a:hover{
 .contactContainer{
     background-color:#c4c4c4;
     padding: 30px;
+    margin-bottom: 5%;
 }
 .contactTitle{
     text-align: center;
     font-size: 3.5vmax;
+    margin-bottom: 5%;
 }
 .contactBody{
     font-family: 'IBM Plex Sans Condensed';
