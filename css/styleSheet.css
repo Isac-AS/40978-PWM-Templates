@@ -1080,9 +1080,9 @@ footer .footerContainer .row .footerLinkList ul li a:hover{
 
 .loginContainer{
     position: absolute;
-    margin-left: 36%;
+    margin-left: 37%;
     margin-top: 5%;
-    width: 30%;
+    width: 20%;
 }
 
 .loginContainer p{
@@ -1156,9 +1156,9 @@ span.buttonText {
 
 .signupContainer{
     position: absolute;
-    margin-left: 36%;
+    margin-left: 37%;
     margin-top: 5%;
-    width: 30%;
+    width: 20%;
 }
 
 .signupContainer p{
@@ -1195,32 +1195,28 @@ span.buttonText {
 
 /*----------------------------------------------------HEADER_EXT------------------------------------------------------*/
 
-.headerextContainer{
+.headerExtContainer{
     display: grid;
-    width: 100%;
-    height: 100%;
     grid-template-columns: 75% 1fr;
 }
 
-.headerextContainer .logo{
+.headerExtContainer .logo{
     height: 100%;
 }
 
-.headerextContainer .logo img{
-    float: right;
-    margin-right: 26.5%;
+.headerExtContainer .logo img{
+    margin-left: 60%;
 }
 
-.headerextContainer .close{
+.headerExtContainer .close{
     height: 100%;
 }
 
-.headerextContainer .close img{
+.headerExtContainer .close img{
     width: 75px;
     height: 75px;
     float: right;
-    padding: 5%;
-
+    padding: 4%;
 }
 
 /*---------------------------------------------ABOUT US---------------------------------------------------------------*/
